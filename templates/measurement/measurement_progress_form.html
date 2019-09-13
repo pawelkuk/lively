@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% load crispy_forms_tags %}
+
+{% block title %}
+Choose Type
+{% endblock title %}
+
+{% block content %}
+<h2>Choose type of measurement you want to track</h2>
+<form action="{% url 'measurement_progress' %} " method="post">
+    {% csrf_token %}
+    {{ form | crispy}}
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+{% endblock content %}

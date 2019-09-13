@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% load crispy_forms_tags %}
+
+{% block title %}
+Choose file
+{% endblock title %}
+
+{% block content %}
+<form enctype="multipart/form-data" method="post" action="{% url 'measurement_csv_form' %}">
+    {% csrf_token %}
+    {{ form | crispy}}
+    <input class="btn btn-primary" type="submit" value="Submit">
+</form>
+{% endblock content %}

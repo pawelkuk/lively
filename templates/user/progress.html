@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block title %}
+Progress
+{% endblock  %}
+
+{% block content %}
+
+    <div class="row">
+         <canvas id="myChart">
+
+         </canvas>
+    </div>
+    <div class="row">
+    <p id="label" style="display: none;">{{ label }}</p>
+    </div>
+    <table style="width:15%;display: none;" >
+{#    <table style="width:15%" >#}
+         {% for element in data_points%}
+               <tr>
+                   <th id="label-{{ element.enum }}">{{ element.label }}</th>
+                   <th id="data-{{ element.enum }}">{{ element.data }}</th>
+               </tr>
+         {% endfor %}
+    </table>
+{% endblock  %}

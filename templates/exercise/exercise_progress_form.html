@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% load crispy_forms_tags %}
+
+{% block title %}
+Choose Exercise
+{% endblock title %}
+
+{% block content %}
+<h2>Choose exercise to track progress</h2>
+<form action="{% url 'exercise_progress' %} " method="post">
+    {% csrf_token %}
+    {{ form | crispy }}
+    <input class="btn btn-primary" type="submit" value="Submit">
+
+</form>
+{% endblock content %}

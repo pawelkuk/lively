@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+
+{% block title %}
+Added Measurements
+{% endblock title %}
+
+{% block content %}
+    <h1>You have added</h1>
+    <ul>
+        {% for dictionary in measurements %}
+            <li>
+                {% for key, value in dictionary.items %}
+                    <p>{{ key }} : {{ value }}</p>
+                {% endfor %}
+            </li>
+        {% endfor %}
+    </ul>
+{% endblock content %}

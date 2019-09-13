@@ -1,0 +1,78 @@
+{% extends "base.html" %}
+
+{% block title %}
+    My sets
+{% endblock title %}
+
+{% block content %}
+    <section class='row'>
+        <div class='col-md-6'>
+            <h2> My last sets </h2>
+            <div class="list-group">
+                <ul>
+                {% for set in my_sets %}
+                    <li>   {{ set }} </li>
+                {% endfor %}
+                </ul>
+            </div>
+        </div>
+        <aside title="set" class='col-md-6'>
+            <p>Add another:</p>
+            <ul>
+                <li><a href="{% url 'set_form' %}">
+                        set
+                    </a></li>
+                <li><a href="{% url 'exercise_form' %}">
+                        exercise
+                    </a></li>
+                <li><a href="{% url 'load_form' %}">
+                        load
+                    </a></li>
+                <li><a href="{% url 'body_part_form' %}">
+                        body part
+                    </a></li>
+
+            </ul>
+        </aside>
+    </section>
+
+    <section class='row'>
+        <div class='col-md-6'>
+            <h2> My last measurements </h2>
+            <div class="list-group">
+                <ul>
+                {% for measurement in my_measurements %}
+                    <li>{{ measurement }}</li>
+                {% endfor %}
+                </ul>
+            </div>
+        </div>
+        <aside title="measurement" class='col-md-6'>
+            <p>Add another:</p>
+            <ul>
+                <li><a href="{% url 'measurement_form' %}">
+                        measurement
+                    </a></li>
+                <li><a href="{% url 'measurement_type_form' %}">
+                        measurement type
+                    </a></li>
+                <li><a href="{% url 'measurement_csv_form' %}">
+                        import CSV
+                    </a></li>
+            </ul>
+        </aside>
+    </section>
+    <section class="row">
+        <div class="col-md-6">
+            <h2>Track progress:</h2>
+            <ul>
+                <li>
+                    <a href="{% url 'measurement_progress' %}">Body Measurements</a>
+                </li>
+                <li>
+                    <a href="{% url 'exercise_progress' %}">Exercises</a>
+                </li>
+            </ul>
+        </div>
+    </section>
+{% endblock content %}

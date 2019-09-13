@@ -1,0 +1,487 @@
+[
+{
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+        "password": "pbkdf2_sha256$150000$SK1SzZbz3BEF$6rc/NFVaXzZVBmk9fsMjoG4IUGBlQilvJnwCJRMMnJ4=",
+        "last_login": "2019-08-30T08:09:35.253Z",
+        "is_superuser": true,
+        "username": "admin",
+        "first_name": "",
+        "last_name": "",
+        "email": "paffcio314@gmail.com",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2019-08-22T09:25:30.543Z",
+        "groups": [],
+        "user_permissions": [
+            38,
+            39,
+            46,
+            47
+        ]
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 2,
+    "fields": {
+        "password": "pbkdf2_sha256$150000$RL9wRigRl9cM$wat/4TLLPXmNrD9wlzAFTa4OBbRboTm+eWyfN1l8nS0=",
+        "last_login": "2019-08-27T09:41:50.335Z",
+        "is_superuser": false,
+        "username": "alice",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2019-08-22T16:41:09.856Z",
+        "groups": [],
+        "user_permissions": [
+            33,
+            34,
+            35,
+            38,
+            39,
+            46,
+            47
+        ]
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "eq2rjyfqqvfnc7gqptzlh84et8dj8vxs",
+    "fields": {
+        "session_data": "MTMxNTMzZWUxNDA3YjZmN2MxYjBlNjE1NDcyYzkxN2VlNDgwMDAzZTp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiJhMzdiNDZmM2JkZDliZWU4NTY2OGE5MDY2NDQ1NzE2ZWU4YWNiNzhjIn0=",
+        "expire_date": "2019-09-13T08:09:35.319Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "mdu55uft6isuf7cn62wd6dkzcs42fmv8",
+    "fields": {
+        "session_data": "MTMxNTMzZWUxNDA3YjZmN2MxYjBlNjE1NDcyYzkxN2VlNDgwMDAzZTp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiJhMzdiNDZmM2JkZDliZWU4NTY2OGE5MDY2NDQ1NzE2ZWU4YWNiNzhjIn0=",
+        "expire_date": "2019-09-10T13:19:59.453Z"
+    }
+},
+{
+    "model": "exercise.bodypart",
+    "pk": 1,
+    "fields": {
+        "user": 1,
+        "name": "arms",
+        "description": null,
+        "creation_date": "2019-08-22T09:41:27.515Z"
+    }
+},
+{
+    "model": "exercise.bodypart",
+    "pk": 2,
+    "fields": {
+        "user": 1,
+        "name": "legs",
+        "description": "meaning the squads and hamstrings",
+        "creation_date": "2019-08-26T16:44:23.152Z"
+    }
+},
+{
+    "model": "exercise.bodypart",
+    "pk": 3,
+    "fields": {
+        "user": 1,
+        "name": "chest",
+        "description": null,
+        "creation_date": "2019-08-26T16:48:38.410Z"
+    }
+},
+{
+    "model": "exercise.bodypart",
+    "pk": 4,
+    "fields": {
+        "user": 1,
+        "name": "neck",
+        "description": null,
+        "creation_date": "2019-08-26T16:49:04.987Z"
+    }
+},
+{
+    "model": "exercise.bodypart",
+    "pk": 5,
+    "fields": {
+        "user": 1,
+        "name": "back",
+        "description": null,
+        "creation_date": "2019-08-26T16:49:30.077Z"
+    }
+},
+{
+    "model": "exercise.exercise",
+    "pk": 1,
+    "fields": {
+        "user": 1,
+        "name": "biceps curl",
+        "description": "bend the elbow in a slow and controled fashion",
+        "body_part": 1,
+        "creation_date": "2019-08-27T07:16:04.202Z",
+        "is_bodyweight": false
+    }
+},
+{
+    "model": "exercise.set",
+    "pk": 3,
+    "fields": {
+        "user": 2,
+        "exercise": 1,
+        "load": 3,
+        "number_of_reps": 12,
+        "date": "2019-08-27T07:18:36.656Z"
+    }
+},
+{
+    "model": "exercise.set",
+    "pk": 4,
+    "fields": {
+        "user": 1,
+        "exercise": 1,
+        "load": 3,
+        "number_of_reps": 12,
+        "date": "2019-08-27T13:53:51.288Z"
+    }
+},
+{
+    "model": "exercise.set",
+    "pk": 5,
+    "fields": {
+        "user": 1,
+        "exercise": 1,
+        "load": 3,
+        "number_of_reps": 14,
+        "date": "2019-08-27T13:54:03.655Z"
+    }
+},
+{
+    "model": "exercise.load",
+    "pk": 1,
+    "fields": {
+        "user": 1,
+        "load": 20,
+        "units": "kg"
+    }
+},
+{
+    "model": "exercise.load",
+    "pk": 2,
+    "fields": {
+        "user": 1,
+        "load": 100,
+        "units": "kg"
+    }
+},
+{
+    "model": "exercise.load",
+    "pk": 3,
+    "fields": {
+        "user": 1,
+        "load": 10,
+        "units": "kg"
+    }
+},
+{
+    "model": "measurement.measurementtype",
+    "pk": 1,
+    "fields": {
+        "user": 1,
+        "name": "weight",
+        "description": "Measurement of total body mass done on a cheap digital scale",
+        "creation_date": "2019-08-22T11:19:08.887Z"
+    }
+},
+{
+    "model": "measurement.measurementtype",
+    "pk": 2,
+    "fields": {
+        "user": 1,
+        "name": "biceps",
+        "description": null,
+        "creation_date": "2019-08-26T17:18:14.269Z"
+    }
+},
+{
+    "model": "measurement.measurementtype",
+    "pk": 3,
+    "fields": {
+        "user": 1,
+        "name": "waist",
+        "description": null,
+        "creation_date": "2019-08-26T17:18:32.365Z"
+    }
+},
+{
+    "model": "measurement.measurement",
+    "pk": 1,
+    "fields": {
+        "user": 1,
+        "measurement_type": 1,
+        "note": null,
+        "creation_date": "2019-08-22T11:20:16.465Z",
+        "measurement": 75,
+        "units": "kg"
+    }
+},
+{
+    "model": "measurement.measurement",
+    "pk": 2,
+    "fields": {
+        "user": 1,
+        "measurement_type": 1,
+        "note": null,
+        "creation_date": "2019-08-22T11:20:35.879Z",
+        "measurement": 76,
+        "units": "kg"
+    }
+},
+{
+    "model": "measurement.measurement",
+    "pk": 3,
+    "fields": {
+        "user": 1,
+        "measurement_type": 1,
+        "note": "after all night partying",
+        "creation_date": "2019-08-22T14:56:17.082Z",
+        "measurement": 74,
+        "units": "kg"
+    }
+},
+{
+    "model": "measurement.measurement",
+    "pk": 5,
+    "fields": {
+        "user": 1,
+        "measurement_type": 1,
+        "note": "rebound",
+        "creation_date": "2019-08-26T17:19:45.458Z",
+        "measurement": 76,
+        "units": "kg"
+    }
+},
+{
+    "model": "measurement.measurement",
+    "pk": 6,
+    "fields": {
+        "user": 1,
+        "measurement_type": 3,
+        "note": "off to a good start",
+        "creation_date": "2019-08-26T17:52:14.735Z",
+        "measurement": 85,
+        "units": "cm"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+        "action_time": "2019-08-22T09:39:23.968Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "1",
+        "object_repr": "Load object (1)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+        "action_time": "2019-08-22T09:41:27.516Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "1",
+        "object_repr": "BodyPart object (1)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3,
+    "fields": {
+        "action_time": "2019-08-22T09:42:25.289Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "1",
+        "object_repr": "Exercise object (1)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 4,
+    "fields": {
+        "action_time": "2019-08-22T09:42:56.090Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "1",
+        "object_repr": "Set object (1)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 5,
+    "fields": {
+        "action_time": "2019-08-22T09:56:55.932Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "1",
+        "object_repr": "biceps curls",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"name\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 6,
+    "fields": {
+        "action_time": "2019-08-22T11:19:08.888Z",
+        "user": 1,
+        "content_type": 11,
+        "object_id": "1",
+        "object_repr": "weight",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 7,
+    "fields": {
+        "action_time": "2019-08-22T11:20:16.466Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "1",
+        "object_repr": "weight 75 kg",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 8,
+    "fields": {
+        "action_time": "2019-08-22T11:20:35.880Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "2",
+        "object_repr": "weight 76 kg",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 9,
+    "fields": {
+        "action_time": "2019-08-22T14:56:17.082Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "3",
+        "object_repr": "weight 74 kg",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 10,
+    "fields": {
+        "action_time": "2019-08-26T16:35:04.119Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "1",
+        "object_repr": "arms",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 11,
+    "fields": {
+        "action_time": "2019-08-26T17:49:19.763Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "4",
+        "object_repr": "weight 85 cm",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 12,
+    "fields": {
+        "action_time": "2019-08-27T05:48:15.002Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "2",
+        "object_repr": "6 squads",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 13,
+    "fields": {
+        "action_time": "2019-08-27T05:48:15.100Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "1",
+        "object_repr": "8 biceps curls",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 14,
+    "fields": {
+        "action_time": "2019-08-27T05:48:29.094Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "2",
+        "object_repr": "squads",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 15,
+    "fields": {
+        "action_time": "2019-08-27T05:48:29.182Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "1",
+        "object_repr": "biceps curls",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 16,
+    "fields": {
+        "action_time": "2019-08-27T13:55:01.552Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "1",
+        "object_repr": "biceps curl",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"user\"]}}]"
+    }
+}
+]

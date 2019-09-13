@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% load crispy_forms_tags %}
+
+
+{% block title %}
+New Load
+{% endblock title %}
+
+{% block content %}
+<h2>New Load</h2>
+<form action="{% url 'load_form' %} " method="post">
+    {% csrf_token %}
+    {{ form | crispy}}
+    <input class="btn btn-primary" type="submit" value="Submit">
+</form>
+{% endblock content %}

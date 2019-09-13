@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block title %}
+    Welcome
+{% endblock title %}
+
+{% block content %}
+    <div class="row">
+        <div class="jumbotron col col-md-6">
+            <div class="cointainer">
+                <h2>Lively is a free online fitness tracker with visualization tools!</h2>
+                <p>It allows you to take over your fitness journey!</p>
+                <p>With us you will finally see the results have always dreamed of!</p>
+                <p>Do not hesitate and join now!</p>
+                <p>Other people all over the world trust us in delivering the functionality they need!</p>
+                <form action="{% url 'user_signup' %}" method="get">
+                    {% csrf_token %}
+                    <button type="submit" class="btn btn-success btn-lg">Sign up</button>
+                </form>
+            </div>
+        </div>
+        <div class="col col-md-6">
+            <img src="{% static "img/hip.jpg" %}" alt='my image'>
+        </div>
+    </div>
+    <dib class="row">
+        <img src="{% static "img/victor.jpg" %}" alt='my image'>
+    </dib>
+{% endblock content %}
