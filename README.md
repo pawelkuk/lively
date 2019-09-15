@@ -1,1 +1,1 @@
-django 2.2 app for tracking fitness related measurements
+django 2.2 app for tracking fitness related measurements with js visualization
